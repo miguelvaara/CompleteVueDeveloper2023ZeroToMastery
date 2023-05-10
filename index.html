@@ -8,9 +8,29 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app">
-        Moi
+    <div id="app" v-cloak>
+        <p>{{ fullName() }}</p>
+        <!-- <a v-bind:href="url" target="_blank">Kuukkeliin</a> The same -->
+        <a :href="url" target="_blank">Kuukkeliin</a> <!-- The same -->
+        <p v-html="raw_url"></p>
+        <p v-html="raw_html"></p>
+        <p>{{ age }}</p>
+        <hr>
+
+        <label>Firts Name</label>
+        <input type="text" v-model="firstName"/> 
+        <label>Last Name</label>
+        <input type="text" v-model="lastName" />
+
+        <!-- v-on and @ are interchangeable -->
+        <button type="button" v-on:click="increment">Increment</button>
+        <button type="button" @click="age--">Decrement</button>
+
+
     </div>
+    <!-- <div id="app2">
+        Meitsin nomen est {{ firstName }} ja sukunimi on {{ lastName }}
+    </div>     -->
     <script src="https://unpkg.com/vue@3"></script>
     <script src="app.js"></script>
 </body>
