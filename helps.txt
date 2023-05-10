@@ -1,0 +1,1 @@
+Todella hyvä ja ytimekäs esimerkki vue-tiedostojen käytöstä ja komponenttiajattelusta: https://www.youtube.com/watch?v=FWQSuskE5UA (vaatii jatkokseen webpak-ohjeen)
