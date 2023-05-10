@@ -20,10 +20,14 @@
         <label>Firts Name</label>
         <input type="text" v-model="firstName"/> 
         <label>Last Name</label>
-        <input type="text" v-model="lastName" />
+        <!-- Tapa 1 -->
+        <!-- <input type="text" v-model="lastName" />  -->
+        <!-- Tapa 2 -->
+        <input type="text" :value="lastName" 
+          @input="updateLastName('Last name event triggered!', $event)" />
 
         <!-- v-on and @ are interchangeable -->
-        <button type="button" v-on:click="increment">Increment</button>
+        <button type="button" v-on:click="increment">Increment</button> 
         <button type="button" @click="age--">Decrement</button>
 
 
